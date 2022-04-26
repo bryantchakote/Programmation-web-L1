@@ -1,0 +1,109 @@
+/* Exercice 1 */
+
+img[class*="1"]{width: 300px; height: 200px;}
+
+img[class*="2"]{width: 200px;}
+
+img[class*="3"]{height: 100px;}
+
+
+/* Exercice 3 */
+
+div.first, div.second{border: 1px solid black;}
+
+div.first{height: 800px;}
+
+div.second{width: 70%; height: 80%;}
+
+
+/* Exercice 4 */
+
+p.long{width: 700px; height: 300px;}
+
+p.a{overflow: scroll;}
+
+p.b{overflow: hidden;}
+
+
+/* Exercice 5 */
+
+span.span_bloc{
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    display: block;
+}
+
+
+/* Exercice 6 */
+
+a[href*="School"]{display: block;}
+
+
+/* Exercices 7 & 8 */
+
+img.a1{float: left;}
+
+img.b2{float: right;}
+
+p.mil1{clear: none;}
+
+p.mil2{clear: left;}
+
+p.fin1{clear: none;}
+
+p.fin3{clear: right;}
+
+
+/* Exercice 9 */
+
+div.col1{width: 19.9%;}
+
+div.col2{
+    width: 65%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px black;
+    font-size: 18px;
+    text-align: center;
+    background-color: RGBa(0, 0, 0, 0.6);
+    color: RGBa(255, 255, 255, 0.6);
+    font-family: monospace;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 10px black;
+}
+
+div.col3{width: 14.8%;}
+
+div[class*="col"]{
+    height: 350px;
+    float: left;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+div ul{padding: 0px; margin-top: 80px;}
+
+li[class^="nine"]{
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+li[class^="nine"] a{display: inline-block;}
+
+li.nine1{background-color: green;}
+
+li.nine2{background-color: red;}
+
+li.nine3{background-color: yellow;}
+
+img.special{
+    width: 20px;
+    height: 20px;
+}
+
+.col2 p{line-height: 7px;}
+
+
+/* Dernier <hr> */
+hr.down{clear: left;}

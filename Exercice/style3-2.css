@@ -1,0 +1,102 @@
+/* Exercice 1 */
+
+p.ex1{font-family: Georgia, 'serif';}
+
+
+/* Exercice 2 */
+
+code.ex2-1{font-family: 'Courier New';}
+
+samp.ex2-2{font-family: 'Lucinda Console';}
+
+
+/* Exercice 3 */
+
+h1.ex3-1{
+    font-family: Arial;
+    font-size: 24px;
+}
+
+h2.ex3-2{
+    font-family: Georgia;
+    font-size: 1.2em;
+}
+
+
+/* Exercice 4 */
+
+h1.ex4-1{font-size: 200%;}
+h2.ex4-2{font-size: 150%;}
+h3.ex4-3{font-size: 100%;}
+
+
+/* Exercice 5 */
+
+h1.ex5-11{font-size: 1.38cm;}
+h2.ex5-12{font-size: 1.035cm;}
+h3.ex5-13{font-size: 0.69cm;}
+
+h1.ex5-21{font-size: 52px;}
+h2.ex5-22{font-size: 39px;}
+h3.ex5-23{font-size: 26px;}
+
+p+h1+h2+h3{color: black;}
+
+*[class*="ex4"], *[class*="ex5"]{display: inline; padding-right: 50px;}
+
+
+/* Exercice 6 */
+
+div.ex6{
+    width: 300px;
+    height: 350px;
+    background-color: lightgreen;
+    border: 4px dashed green;
+    padding: 10px;
+}
+
+div.ex6 img{height: 250px;}
+
+
+/* Exercice 7 */
+
+p.ex7{
+    background-color: lightblue;
+    height: 1.5em;
+}
+
+p.ex7 b{
+    font-weight: bold;
+    height: 2em;
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+}
+
+/* Exercice 8 */
+
+p.ex8{font-size: 25px;}
+
+p.ex8 code{
+    font-family: 'Courier New';
+    font-weight: 900;
+    font-size: 55px;
+}
+
+/* Exercice 9 */
+
+p.ex9 i{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Exercice 10 */
+
+div.ex10 h3, div.ex10 p:first-line{
+    font-variant-caps: small-caps;
+    color: darkcyan;
+}
+
+
+/* Exercice 11 */
+/* flemme */

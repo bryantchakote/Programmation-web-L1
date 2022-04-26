@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>famille</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            header p.salut{font-size: 32px; letter-spacing: 4px; word-spacing: 60px;}
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <script>
+                var nom = prompt("Votre nom s'il vous plait?");
+                document.write('<p class="salut">Welcome <span class="nom"> ', nom, '</span></p>');
+            </script>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="accueil">Accueil</a></li>
+                <li><a href="#proche" class="proche">Famille proche</a></li>
+                <li><a href="#eloignee" class="eloignee">Famille eloignee</a></li>
+                <li class="marge">
+                    <form method="post" action="tratement.php">
+                        <input type="text" placeholder=&#x1F50D;Recherche class="recherche">
+                    </form>
+                </li>
+                <li><a href="inscription_connexion.html" class="connexion">Connexion</a></li>
+                <li><a href="inscription_connexion.html" class="inscription">Inscription</a></li>
+            </ul>
+        </nav>
+        
+        <div id="accueil" class="space"></div>
+        
+        <section class="accueil">
+            <h1>ACCUEIL</h1>
+            
+            <p>Mbembe kidi, Me yega, Mbolo, Djarama, Bonjour, Good morning, Buenos dias, Guten tag, Salam, Sunchhen, Ni hao, Shalom, Namaste, Konnichi wa, Mbote, Kia ora, ... J'espère que tous ont compris, et que chacun s'est senti salué d'une certaine façon!</p>
+            <p>Conscients de l'intérêt que vous manifestez pour nos petites affaires familiales, nous allons désormais via ce blog (actualisé en temps réel - eeehhh oui pour les abonnés exclusivement! :)  vous parler de nous, des gens, des hommes, des femmes, des jeunes, des vieux, des grands, des petits, des gros, des minces, des courts, des longs, des noirs, des blancs, ... en bref, de tout ce qu'on peut s'imaginer lorsqu'on entend "MAVOUEMBAPALOPEMBEKOTOMINASSO".</p>
+            <p>Pour la petite histoire, la famille MAVOUEMBAPALOPEMBEKOTOMINASSO en est aujourd'hui à sa septième génération, et ses origines remontent aux années 1819 avec la naissance d'un vaillant guerrier du nom de KOUNTA MAVOUEMBA dans la contrée de Tchirbi au sud de l'Afrique. Dès l'âge de 6 ans, KOUNTA MAVOUEMBA surnommé "le coriace" apprend à tirer à l'arc auprès de ses ainés. Il se fait alors remarquer par son habileté et ses reflexes, lesquels lui permettront plus tard de conduire de nombresuses conquêtes vers le Nord, pour s'établir au soir de sa vie dans le village Baham au Cameroun.</p>
+            <p>MAVOUEMBAPALOPEMBE, fils unique de la 4e épouse du Roi MAVOUEMBA succèdera à son pere, et sera lui-meme remplacé au debut des années 1900 par MAVOUEMBAPALOPEMBEKOTTO dont le règne ne durera que quelques années. Investi à la Chefferie Suprème à l'age de 15 ans seulement, MAVOUEMBAPALOPEMBEKOTOMINASSO sera un Roi sage et un guerrier sans pareil. Il combattra les allemands durant la Première Guerre Mondiale; ces derniers consommeront un échec digne de ce nom dans la vallée de Baho en avril 1917. Après sa victoire, MAVOUEMBAPALOPEMBEKOTOMINASSO fut baptisé NOUMBISSI, ce qui signifie "Lion Indomptable". C'est de là qu'est né le symbole représentant les equipes sportives nationales.</p>
+            
+            <span id="proche"></span>
+        </section>
+        
+        <section class="proche">
+            <h1>FAMILLE PROCHE</h1>
+            
+            <p>Alors dans cette rubrique on va s'intéresser à la famille proche (de mon point de vue, les membres sont mes grands parents, mes parents, mes freres et moi)</p>
+            
+            <table>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="fonction">Pere de</td>
+                    <td class="fonction">Mere de</td>
+                    <td class="fonction">Enfants de</td>
+                </tr>
+                <tr>
+                    <td class="fonction">Papa</td>
+                    <td>Joseph NOUMBISSI</td>
+                    <td>Esther TCHAWE</td>
+                    <td rowspan=2>Bryan, Merveille &amp; Damien TCHAKOTE</td>
+                </tr>
+                <tr>
+                    <td class="fonction">Mama</td>
+                    <td>Lucas KENNE</td>
+                    <td>Lucienne DJIMELI</td>
+                </tr>
+            </table>
+            
+            <dl>
+                <dt>Joseph NOUMBISSI</dt><dd>13<sup>e</sup> fils et héritier de MAVOUEMBAPALOPEMBEKOTOMINASSO, père de Du Prince TCHAKOTE</dd>
+                <dt>Esther TCHAWE</dt><dd>1<sup>ère</sup> épouse de Joseph NOUMBISSI ayant donné naissance à Du Prince TCHAKOTE et à toute sa fratrie</dd>
+                <dt>Du Prince TCHAKOTE</dt><dd>Du Prince TCHAKOTE, what a man!</dd>
+                <dt>Lucas KENNE</dt><dd>Illustre homme de sciences et géniteur de la mama</dd>
+                <dt>Lucienne DJIMELI</dt><dd>Ma'a Mboundo'oh, a donné naissance à Alice WADO en février  1979</dd>
+                <dt>Alice WADO</dt><dd>Maman, Premiere Dame</dd>
+                <dt>Bryan TCHAKOTE</dt><dd>Bof moi-meme</dd>
+                <dt>Merveille TCHAKOTE</dt><dd>16 ans, ressemble beaucoup a maman</dd>
+                <dt>Damien TCHAKOTE</dt><dd>Le dernier né de la famille</dd>
+            </dl>
+            
+            <span id="eloignee"></span>
+        </section>
+        
+        <section class="eloignee">
+            <h1>FAMILLE ELOIGNEE</h1>
+            
+            <p>Et donc la famille eloignée concerne ici les tontons, les tatas, les cousins/cousines.</p>
+            
+            <ol class="group">
+                <div class="tontons">
+                    <li>Tontons</li>
+                    <ol class="detail">
+                        <li>Tonton Samuel</li>
+                        <li>Tonton André</li>
+                        <li>Tonton Gilbert</li>
+                        <li>Tonton Moïse</li>
+                        <li>Tonton Gavin</li>
+                        <li>Tonton Fridolain</li>
+                    </ol>
+                </div>
+                
+                <div class="tatas">
+                    <li>Tatas</li>
+                    <ol class="detail">
+                        <li>Tata Marie-Noël</li>
+                        <li>Tata Alex</li>
+                        <li>Tata Paulette</li>
+                        <li>Tata Carole</li>
+                        <li>Tata Marielle</li>
+                    </ol>
+                </div>
+                
+                <div class="cousos">
+                    <li>Cousins / Cousines</li>
+                    <ol class="detail">
+                        <li>Syntiche</li>
+                        <li>Darius</li>
+                        <li>Esther Rosange</li>
+                        <li>Paul-Eugene</li>
+                        <li>Priscille</li>
+                        <li>Roxanne</li>
+                        <li>Bébé N</li>
+                        <li>Glory</li>
+                        <li>Eddy Patrick</li>
+                        <li>Verena</li>
+                        <li>Jason</li>
+                        <li>Sarah-Georges</li>
+                        <li>Chris</li>
+                    </ol>
+                </div>
+            </ol>
+        </section>
+        
+        <footer>
+            <a id="policy" href="#policy">PRIVACY POLICY</a> - <a id="terms" href="#terms">Terms of use</a> - &#153;Copyright &#174; &#38; &#169; 2017-2020 mavouembapalopembekotominasso. All Rights Reserved.
+        </footer>
+    </body>
+</html>

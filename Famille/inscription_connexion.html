@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>subscribe</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            header p.salut{font-size: 20px; letter-spacing: 2px; word-spacing: 20px;}
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <p class="salut">Recevez en exclusivité les dernières acutalités sur les <span class="nom">MAVOUEMBAPALOPEMBEKOTOMINASSO</span></p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="accueil">Retourner à l'accueil</a></li>
+                <li class="marge">
+                    <form method="post" action="tratement.php">
+                        <input type="text" placeholder=&#x1F50D;Recherche class="recherche">
+                    </form>
+                </li>
+                <li><a href="inscription_connexion.html" class="connexion">Connexion</a></li>
+                <li><a href="inscription_connexion.html" class="inscription">Inscription</a></li>
+            </ul>
+        </nav>
+        
+        <div id="accueil" class="space"></div>
+        
+        <article class="subscribe">
+            <div class="conn">
+                <h3>Connexion</h3>
+                <form method="post" action="traitement.php">
+                    
+                    <input type="text" id="identifiant" placeholder="Nom d'utilisateur, mail ou telephone"
+                           onFocusIn = "this.placeholder = '';
+                                        document.getElementById('key').style.marginTop = '12px';"
+                           onFocusOut = "this.placeholder = 'Nom d\'utilisateur, mail ou telephone';
+                                         document.getElementById('key').style.marginTop = '32px';"
+                    >
+                    <label for="identifiant">Nom d'utilisateur, mail ou telephone</label>
+                    
+                    <input type="password" id="key" placeholder="Mot de passe"
+                           onFocusIn = "this.placeholder = '';
+                                        document.getElementById('new').style.marginTop = '12px';"
+                           onFocusOut = "this.placeholder = 'Mot de passe';
+                                         document.getElementById('new').style.marginTop = '32px';"
+                    >
+                    <label for="key">Mot de passe</label>
+                    
+                    <a href="reset_mdp.html" id="new">Mot de passe oublié?</a>
+                    
+                    <input type="checkbox" name="perm_conn" id="perm_conn" checked="checked">
+                    <label for="perm_conn">Rester connecté</label>
+                    
+                    <input type="submit" value="Suivant">
+                </form>
+                
+            </div>
+            <div class="insc">
+                <h3>Inscription</h3>
+                <form method="post" action="traitement.php">
+                    <input type="text" id="prenom" name="prénom" placeholder="Prenom" required="required" maxlenght="32">
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required="required" maxlength="32">
+                    <input type="email" id="mail" name="mail" placeholder="Adresse mail" required="required">
+                    <input type="password" id="password" name="password" placeholder="Mot de passe" required="required">
+                    <input type="number" id="tel" name="tel" min="222000000" max="699999999" placeholder="Numero de portable">
+                    
+                    
+                    <input type="number" id="jour" name="jour" min="1" max="31" placeholder="Date de naissance (jour)">
+                    
+                    <input type="month" id="mois_annee" min="1920-01" value="2020-05">
+                    
+                    <input type="text" id="sexe" name="sexe" placeholder="Sexe (facultatif)">
+                    
+                    <p class="conditions">En cliquant sur S'inscrire, vous acceptez les <a href="CGU.html">CGU</a> et la <a href="vie_privee.html">Politique de vie privée</a></p>
+                    
+                    <input type="submit" value="S'inscrire">
+                </form>
+            </div>
+        </article>
+        
+        <footer>
+            <a id="policy" href="#policy">PRIVACY POLICY</a> - <a id="terms" href="#terms">Terms of use</a> - &#153;Copyright &#174; &#38; &#169; 2017-2020 mavouembapalopembekotominasso. All Rights Reserved.
+        </footer>
+    </body>
+</html>

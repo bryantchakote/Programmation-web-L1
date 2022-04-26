@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TD - Programmation web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><a href="index.html"><img src="ESSFAR.png" alt="Logo ESSFAR" class="head" id="ref"></a></header>
+        <hr class="up">
+        
+        <section>
+            <div class="title">
+                <h1 class="choice"><a href="TD1.html" class="N">TD 1</a></h1>
+                <h1 class="choice"><a href="TD2.html" class="N">TD 2</a></h1>
+                <h1 class="choice"><a href="TD3-1.html">TD 3</a></h1>
+                <br><br>
+                
+                <h2 class="choice"><a href="TD3-1.html">Partie I</a></h2>
+                <h2 class="choice"><a href="TD3-2.html" class="N">Partie II</a></h2>
+                <h2 class="choice"><a href="TD3-3.html" class="N">Partie III</a></h2>
+            </div>
+            <hr>
+
+            <h3>Exercice 1</h3>
+            <p>L'attribut <span>action</span> de l'element &lt;form&gt; est obligatoire car c'est lui qui permet d'entrer l'adresse du fichier qui traite les donnees du formulaire.</p>
+            <hr>
+
+            <h3>Exercice 2</h3>
+            <p>L'attribut <span>enctype</span> de l'element &lt;form&gt; determine le type de donnees qui sont transmises au serveur. En general, il prend la valeur <span>application/x-url</span>.</p>
+            <hr>
+
+            <h3>Exercice 3</h3>
+            <p>Ci-dessous, un bouton d'envoi avec image</p>
+            <form method="post" action="index.html">
+                <button type="submit"><img src="ESSFAR.png"></button>
+            </form>
+            <hr>
+            
+            <h3>Exercie 4</h3>
+            <p>Les elements de creation de champs de saisie de texte:</p>
+            <ul>
+                <li><span>input</span> : monoligne</li>
+                <li><span>textarea</span> : multiligne</li>
+            </ul>
+            <hr>
+
+            <h3>Exercice 5</h3>
+            <table>
+                <caption>Differences entre les methodes <span>get</span> et <span>post</span></caption>
+                <tr>
+                    <th>get</th>
+                    <th>post</th>
+                </tr>
+                <tr>
+                    <td>Envoi de 255 caracteres au maximum</td>
+                    <td>Nombre de caracteres envoyes illimite</td>
+                </tr>
+                <tr>
+                    <td>Informations passees dans la barre d'adresse de la page</td>
+                    <td>Informations ne transitant pas par la barre d'adresse</td>
+                </tr>
+            </table>
+
+            <form method="post" action="index.html">
+                <fieldset>
+                    <legend><h3>Exercice 6 - Infos personnelles</h3></legend>
+                    <label for="nom1">Nom</label>
+                    <input type="text" id="nom1" maxlength="25"><br>
+                    <label for="mdp">Password</label>
+                    <input type="password" id="mdp" maxlength="8"><br>
+                    <label for="mail1">E-mail</label>
+                    <input type="email" id="mail1" maxlength="40"><br>
+
+                    <input type="reset" value="Reinitialiser">
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 7 - Commentaire 15*60</h3></legend>
+                    <label for="comment">Un commentaire</label><br>
+                    <textarea id="comment" rows=15 cols=59></textarea><br>
+
+                    <input type="reset" value="Reinitialiser">
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 8 - Origines / Niveau scolaire</h3></legend>
+
+                    <p>De quelle origine etes-vous?</p>
+                    <input type="radio" name="pays" id="france">
+                    <label for="france">Francais</label>
+                    <input type="radio" name="pays" id="europe">
+                    <label for="europe">Europeen</label>
+                    <input type="radio" name="pays" id="autres">
+                    <label for="autres">Autres</label>
+
+                    <p>Votre diplome le plus recent?</p>
+                    <input type="radio" name="diplome" id="licence">
+                    <label for="licence">Licence</label>
+                    <input type="radio" name="diplome" id="master">
+                    <label for="master">Master</label>
+                    <input type="radio" name="diplome" id="doctorat">
+                    <label for="doctorat">Doctorat</label>
+
+                    <br>
+                    <input type="reset" value="Reinitialiser">
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 9 - Adresse client</h3></legend>
+                    <label for="nom2">Nom</label>
+                    <input type="text" id="nom2"><br>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom"><br>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse"><br>
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville"><br>
+                    <label for="poste">Code postal</label>
+                    <input type="text" id="poste">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 10 - Infos personnelles / Competences</h3></legend>
+                    <label for="nom3">Nom</label>
+                    <input type="text" id="nom3"><br>
+                    <label for="tel">Telephone</label>
+                    <input type="number" id="tel" min="222000000" max="699999999"><br>
+                    <label for="datenaiss">Date de naisssance</label>
+                    <input type="date" id="datenaiss"><br>
+                    <label for="mail2">E-mail</label>
+                    <input type="email" id="mail2">
+
+                    <p>Competences</p>
+                    <input type="checkbox" name="abilities" id="HTML5">
+                    <label for="HTML5">HTML 5</label>
+                    <input type="checkbox" name="abilities" id="CSS3">
+                    <label for="CSS3">CSS 3</label>
+                    <input type="checkbox" name="abilities" id="PHP5">
+                    <label for="PHP5">PHP 5</label>
+                    <input type="checkbox" name="abilities" id="JS">
+                    <label for="JS">JavaScript</label>
+                    <input type="checkbox" name="abilities" id="SQL">
+                    <label for="SQL">MySQL</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 11 - Competences</h3></legend>
+                    <label for="ablt">Competences</label><br>
+                    <select name="competences" id="ablt" multiple="multiple">
+                        <option value="HTML 5">HTML 5</option>
+                        <option value="CSS 3">CSS 3</option>
+                        <option value="PHP 5">PHP 5</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="MySQL">MySQL</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Exercice 12 - Departement</h3></legend>
+                    <label for="depart">Departement du domicile</label>
+                    <select name="departement" id="depart">
+                        <optgroup label="Est">
+                            <option value="Haut-Nyong">Haut-Nyong</option>
+                            <option value="Kadey">Kadey</option>
+                        </optgroup>
+                        <optgroup label="Nord">
+                            <option value="Benoue">Benoue</option>
+                            <option value="Faro">Faro</option>
+                            <option value="Mayo-Louti">Mayo-Louti</option>
+                            <option value="Mayo-Rey">Mayo-Rey</option>
+                        </optgroup>
+                        <optgroup label="Nord-Ouest">
+                            <option value="Boyo">Boyo</option>
+                            <option value="Donga-Mantung">Donga-Mantung</option>
+                            <option value="Mezam">Mezam</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+            </form>
+        </section>
+        
+        <hr class="down">
+        <footer>
+            <a href="#ref">Bryan Tchakote - L1 - ESSFAR - 2019/2020</a>
+        </footer>
+    </body>
+</html>
